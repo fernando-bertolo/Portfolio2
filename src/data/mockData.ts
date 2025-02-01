@@ -54,10 +54,31 @@ export const experiences: Experience[] = [
   },
   {
     id: 2,
-    company: "Digital Innovations",
-    position: "Frontend Developer",
-    period: "2018 - 2020",
-    description: "Developed responsive web applications using React and TypeScript"
+    company: "Tech Solutions Inc",
+    position: "Senior Frontend Developer",
+    period: "2020 - Present",
+    description: "Leading the frontend development team and implementing new features"
+  },
+  {
+    id: 3,
+    company: "BluePex CyberSecurity",
+    position: "Analista de redes",
+    period: "Aug 2022 - mar 2024",
+    description: `
+      <p>Durante minha atuação na Bluepex Cybersecurity, fui responsável por garantir o funcionamento eficiente e seguro dos sistemas de clientes. Minhas principais atividades incluíram:</p>
+      <br>
+      <ul>
+        <li>Configuração e manutenção de servidores DHCP, DNS e Active Directory.</li>
+        <li>Implementação de regras de firewall e redirecionamento de portas (NAT).</li>
+        <li>Configuração de proxies e VPNs, com expertise em OpenVPN e IPsec.</li>
+        <li>Integração de gerenciamento de rotas utilizando BGP/FRR para VPNs OpenVPN.</li>
+        <li>Desenvolvimento de estratégias de LoadBalance e FailOver, assegurando redundância e continuidade dos serviços.</li>
+        <li>Segmentação de redes por meio de VLANs, aprimorando a segurança e a eficiência das infraestruturas.</li>
+        <li>Uso avançado de ambientes Linux para administração e suporte técnico.</li>
+      </ul>
+      <br>
+      <p>Além das responsabilidades técnicas, também ministrei treinamentos para clientes, disseminando boas práticas e conhecimentos que facilitaram a gestão e a utilização de sistemas.</p>
+    `
   }
 ];
 

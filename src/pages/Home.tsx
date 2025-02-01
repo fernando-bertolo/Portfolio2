@@ -1,7 +1,6 @@
 import About from '../components/sections/About';
 import Projects from '../components/sections/Projects';
 import Experience from '../components/sections/Experience';
-import Blog from '../components/sections/Blog';
 import Certificates from '../components/sections/Certificates';
 import Contact from '../components/sections/Contact';
 
@@ -11,7 +10,6 @@ const Home = () => {
       <About />
       <Projects />
       <Experience />
-      <Blog />
       <Certificates />
       <Contact />
     </div>
