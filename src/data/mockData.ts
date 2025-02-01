@@ -4,19 +4,43 @@ import { Github, Linkedin, Youtube, Instagram, Twitter } from 'lucide-react';
 export const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce solution built with React and Node.js",
+    title: "Portfolio 1.0",
+    description: "Primeiro contato com React criando um portfolio",
     imageUrl: "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=60",
-    technologies: ["React", "Node.js", "MongoDB", "TypeScript"],
-    link: "https://github.com"
+    technologies: ["React", "Node.js", "Styled Components"],
+    link: "https://github.com/fernando-bertolo/Portfolio"
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "A productivity app for managing daily tasks and projects",
+    title: "Gerenciador de estoque automotivo",
+    description: "Projeto realizado como Trabalho de conclusão de curso",
     imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
-    technologies: ["React", "Firebase", "Tailwind CSS"],
-    link: "https://github.com"
+    technologies: ["React", "Express JS", "MySql", "Docker"],
+    link: "https://github.com/fernando-bertolo/Projeto-TCC"
+  },
+  {
+    id: 3,
+    title: "Gerenciador de estoque automotivo",
+    description: "Projeto realizado como Trabalho de conclusão de curso",
+    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
+    technologies: ["React", "Express JS", "MySql", "Docker"],
+    link: "https://github.com/fernando-bertolo/Projeto-TCC"
+  },
+  {
+    id: 4,
+    title: "Gerenciador de estoque automotivo",
+    description: "Projeto realizado como Trabalho de conclusão de curso",
+    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
+    technologies: ["React", "Express JS", "MySql", "Docker"],
+    link: "https://github.com/fernando-bertolo/Projeto-TCC"
+  },
+  {
+    id: 5,
+    title: "Gerenciador de estoque automotivo",
+    description: "Projeto realizado como Trabalho de conclusão de curso",
+    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
+    technologies: ["React", "Express JS", "MySql", "Docker"],
+    link: "https://github.com/fernando-bertolo/Projeto-TCC"
   }
 ];
 

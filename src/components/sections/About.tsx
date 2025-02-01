@@ -19,7 +19,7 @@ const About = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/fernando-bertolo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -27,7 +27,7 @@ const About = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/fernandobertolojr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -35,7 +35,7 @@ const About = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:bertolo.dev@gmail.com"
                 className="text-gray-600 hover:text-gray-900"
               >
                 <Mail size={24} />
