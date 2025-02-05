@@ -1,7 +1,7 @@
 import { certificates } from '../../data/mockData';
 import { Award, ExternalLink } from 'lucide-react';
 
-const Certificates = () => {
+export const Certificates = () => {
   return (
     <section id="certificates" className="py-20 bg-gray-50 min-h-[calc(100vh-4rem)] scroll-margin-top">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,5 +36,3 @@ const Certificates = () => {
     </section>
   );
 };
-
-export default Certificates;

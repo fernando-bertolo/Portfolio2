@@ -2,7 +2,7 @@ import { blogPosts } from '../../data/mockData';
 import { format } from 'date-fns';
 import { Clock } from 'lucide-react';
 
-const Blog = () => {
+export const Blog = () => {
   return (
     <section id="blog" className="py-20 min-h-[calc(100vh-4rem)] scroll-margin-top">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,5 +41,3 @@ const Blog = () => {
     </section>
   );
 };
-
-export default Blog;

@@ -1,6 +1,8 @@
 import { Project, Experience, Certificate, BlogPost, SocialLink } from '../types';
 import { Github, Linkedin, Youtube, Instagram, Twitter } from 'lucide-react';
 
+const tecnologias = ['HTML', 'CSS', 'JavaScript'];
+
 export const projects: Project[] = [
   {
     id: 1,
@@ -54,16 +56,29 @@ export const experiences: Experience[] = [
   },
   {
     id: 2,
-    company: "Tech Solutions Inc",
-    position: "Senior Frontend Developer",
-    period: "2020 - Present",
-    description: "Leading the frontend development team and implementing new features"
+    company: "Solutions BI",
+    position: "Estagiário em desenvolvimento de Sistemas e Análise de Dados",
+    period: "Mar 2024 - Jul 2024",
+    description: `
+      <p>Responsável pelo Desenvolvimento Web Fullstack e criação de relatórios no Power BI.</p>
+      <br>
+      <p>
+        Tecnologias: 
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">HTML</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">CSS</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">JavaScript</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">PHP</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">SQL Server</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">MySQL</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Docker</span> 
+      </p>      
+    `
   },
   {
     id: 3,
     company: "BluePex CyberSecurity",
     position: "Analista de redes",
-    period: "Aug 2022 - mar 2024",
+    period: "Aug 2022 - Mar 2024",
     description: `
       <p>Durante minha atuação na Bluepex Cybersecurity, fui responsável por garantir o funcionamento eficiente e seguro dos sistemas de clientes. Minhas principais atividades incluíram:</p>
       <br>

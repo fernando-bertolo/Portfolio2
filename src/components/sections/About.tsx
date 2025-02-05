@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
 
-const About = () => {
+export const About = () => {
   return (
     <section id="about" className="py-20 bg-gray-50 min-h-[calc(100vh-4rem)] flex justify-center items-center scroll-margin-top">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,5 +47,3 @@ const About = () => {
     </section>
   );
 };
-
-export default About;
