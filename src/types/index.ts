@@ -10,6 +10,7 @@ export interface Project {
 export interface Experience {
   id: number;
   company: string;
+  city: string;
   position: string;
   period: string;
   description: string;

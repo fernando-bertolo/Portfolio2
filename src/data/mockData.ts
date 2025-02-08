@@ -1,7 +1,4 @@
 import { Project, Experience, Certificate, BlogPost, SocialLink } from '../types';
-import { Github, Linkedin, Youtube, Instagram, Twitter } from 'lucide-react';
-
-const tecnologias = ['HTML', 'CSS', 'JavaScript'];
 
 export const projects: Project[] = [
   {
@@ -49,34 +46,52 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
   {
     id: 1,
-    company: "Tech Solutions Inc",
-    position: "Senior Frontend Developer",
-    period: "2020 - Present",
-    description: "Leading the frontend development team and implementing new features"
+    company: "Light System Software",
+    city: "Limeira, São Paulo, Brasil",
+    position: "Desenvolvedor FullStack Jr",
+    period: "Out 2024 - o momento",
+    description: `
+      <ul>
+        <li>
+          Responsável pela criação de APIs utilizando NestJS e TypeScript, com aplicação de conceitos avançados de Clean Architecture e princípios SOLID, 
+          garantindo um código limpo, escalável e de alta qualidade.      
+        </li>
+        <br>
+        <li>
+          Atuando na implementação de novas funcionalidades e manutenção de um sistema focado no gerenciamento de estoque e emissão de notas fiscais, 
+          contribuindo para a eficiência e organização de processos empresariais com as seguintes tecnologias: PHP, Docker, MySQL, JavaScript        
+        </li>
+      </ul>
+
+      <br>
+      <div class="flex flex-wrap gap-3">        
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">HTML</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">CSS</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">JavaScript</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">Jquery</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">Bootstrap</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">TypeScript</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">PHP</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">SQL Server</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">MySQL</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">CodeIgniter</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">Docker</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">Nest Js</span>
+      </div>  
+    `
   },
   {
     id: 2,
     company: "Solutions BI",
-    position: "Estagiário em desenvolvimento de Sistemas e Análise de Dados",
-    period: "Mar 2024 - Jul 2024",
-    description: `
-      <p>Responsável pelo Desenvolvimento Web Fullstack e criação de relatórios no Power BI.</p>
-      <br>
-      <p>
-        Tecnologias: 
-          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">HTML</span>
-          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">CSS</span>
-          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">JavaScript</span>
-          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">PHP</span>
-          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">SQL Server</span>
-          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">MySQL</span>
-          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm">Docker</span> 
-      </p>      
-    `
+    city: "Limeira, São Paulo, Brasil",
+    position: "",
+    period: "",
+    description: ""
   },
   {
     id: 3,
     company: "BluePex CyberSecurity",
+    city: "Limeira, São Paulo, Brasil",
     position: "Analista de redes",
     period: "Aug 2022 - Mar 2024",
     description: `
@@ -96,6 +111,69 @@ export const experiences: Experience[] = [
     `
   }
 ];
+
+
+
+export const solutionsbiExperience: Experience[] = [
+
+  {
+    id: 1,
+    company: "Solutions BI",
+    city: "Limeira, São Paulo, Brasil",
+    position: "Assistant Developer",
+    period: "Jul 2024 - Out 2024",
+    description: `
+      <p>Atuei no Desenvolvimento Web FullStack.</p>
+      <br>
+      <p>Experiências em projetos: </p>
+      <br>
+      <ul>
+        <li>Sistema de gestão de pedidos e delivery em Laravel</li>
+        <li>Projetos de consultas veiculares em PHP</li>
+        <li>Manutenção em sites institucionais com Wordpress</li>
+      </ul>
+      <br>
+
+      <div class="flex flex-wrap gap-3">        
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">HTML</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">CSS</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">JavaScript</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">Jquery</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">Bootstrap</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">TypeScript</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">PHP</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">SQL Server</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">MySQL</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">Laravel</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">Docker</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">WordPress</span>
+      </div>      
+    `
+  },
+  {
+    id: 2,
+    company: "Solutions BI",
+    city: "Limeira, São Paulo, Brasil",
+    position: "Estagiário em desenvolvimento de Sistemas e Análise de Dados",
+    period: "Mar 2024 - Jul 2024",
+    description: `
+      <p>Responsável pelo Desenvolvimento Web Fullstack e criação de relatórios no Power BI.</p>
+      <br>
+
+      <div class="flex flex-wrap gap-3">        
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">HTML</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">CSS</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">JavaScript</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">Bootstrap</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">PHP</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">SQL Server</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">MySQL</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 cursor-pointer">Power BI</span>
+      </div> 
+    `
+  }
+];
+
 
 export const certificates: Certificate[] = [
   {

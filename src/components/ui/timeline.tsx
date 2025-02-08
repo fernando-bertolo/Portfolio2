@@ -1,4 +1,3 @@
-import { Card } from "./card";
 import { ReactNode } from "react";
 import { Experience } from "@/types";
 import { Briefcase } from "lucide-react";
@@ -36,19 +35,16 @@ export function Timeline({ items }: TimelineProps) {
                   </div>
                 </div>
                 <div className="min-w-0 flex-1">
-                  <Card className="p-6">
-                    <div>
-                        <h3 className="text-xl font-semibold text-gray-900">
+                  <div className="flex flex-col">
+                      <h3 className="text-xl font-semibold text-gray-900">
                         {item.position}
-                        </h3>
-                        <p className="text-gray-600 mb-2">{item.company}</p>
-                        <p className="text-gray-500 text-sm mb-4">{item.period}</p>
-                        <div 
+                      </h3>
+                      <p className="text-gray-500 text-sm mb-4">{item.period}</p>
+                      <div 
                         className="text-gray-600"
                         dangerouslySetInnerHTML={{ __html: item.description }}
-                        />     
-                    </div>
-                  </Card>
+                      />     
+                  </div>
                 </div>
               </div>
             </div>
