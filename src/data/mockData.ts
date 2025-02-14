@@ -5,42 +5,29 @@ export const projects: Project[] = [
     id: 1,
     title: "Portfolio 1.0",
     description: "Primeiro contato com React criando um portfolio",
-    imageUrl: "https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&auto=format&fit=crop&q=60",
+    imageUrl: "src/assets/ImagePc.jpg",
     technologies: ["React", "Node.js", "Styled Components"],
-    link: "https://github.com/fernando-bertolo/Portfolio"
+    link: "https://bertolo.netlify.app/",
+    github: "https://github.com/fernando-bertolo/Portfolio"
   },
   {
     id: 2,
     title: "Gerenciador de estoque automotivo",
     description: "Projeto realizado como Trabalho de conclusão de curso",
-    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
+    imageUrl: "src/assets/ImageTcc.png",
     technologies: ["React", "Express JS", "MySql", "Docker"],
-    link: "https://github.com/fernando-bertolo/Projeto-TCC"
+    link: "https://github.com/fernando-bertolo/Projeto-TCC",
+    github: "https://github.com/fernando-bertolo/Projeto-TCC"
   },
   {
     id: 3,
-    title: "Gerenciador de estoque automotivo",
-    description: "Projeto realizado como Trabalho de conclusão de curso",
-    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
-    technologies: ["React", "Express JS", "MySql", "Docker"],
-    link: "https://github.com/fernando-bertolo/Projeto-TCC"
+    title: "Previsão do tempo",
+    description: "Projeto realizado com intuito de aprimorar habilidades de javascript e entender como funciona o deploy de uma aplicação",
+    imageUrl: "src/assets/ImagePrevisionWeather.png",
+    technologies: ["HTML", "CSS", "JavaScript", "Deploy"],
+    link: "https://prevision-weather.netlify.app/",
+    github: "https://github.com/fernando-bertolo/Clima-tempo-JS"
   },
-  {
-    id: 4,
-    title: "Gerenciador de estoque automotivo",
-    description: "Projeto realizado como Trabalho de conclusão de curso",
-    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
-    technologies: ["React", "Express JS", "MySql", "Docker"],
-    link: "https://github.com/fernando-bertolo/Projeto-TCC"
-  },
-  {
-    id: 5,
-    title: "Gerenciador de estoque automotivo",
-    description: "Projeto realizado como Trabalho de conclusão de curso",
-    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
-    technologies: ["React", "Express JS", "MySql", "Docker"],
-    link: "https://github.com/fernando-bertolo/Projeto-TCC"
-  }
 ];
 
 export const experiences: Experience[] = [

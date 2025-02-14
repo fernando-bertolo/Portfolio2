@@ -3,15 +3,20 @@ import { Projects } from '../components/sections/Projects';
 import { Experience } from '../components/sections/Experience';
 import { Certificates } from '../components/sections/Certificates';
 import { Contact } from '../components/sections/Contact';
+import Navbar from '../components/Navbar';
+
 
 const Home = () => {
   return (
-    <div className="pt-16">
-      <About />
-      <Projects />
-      <Experience />
-      <Certificates />
-      <Contact />
+    <div>
+      <Navbar />
+      <div className="pt-16">
+        <About />
+        <Projects />
+        <Experience />
+        <Certificates />
+        <Contact />
+      </div>
     </div>
   );
 };

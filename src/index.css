@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  ul, ol {
+  ul,
+  ol {
     list-style: revert;
     display: revert;
     margin-block-end: revert;
@@ -72,7 +73,7 @@ html {
 }
 
 section {
-  scroll-margin-top: 10vh; /* Ajuste o valor conforme necessário */
+  scroll-margin-top: 7vh; /* Ajuste o valor conforme necessário */
 }
 
 .carousel-container {

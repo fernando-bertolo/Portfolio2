@@ -5,6 +5,7 @@ export interface Project {
   imageUrl: string;
   technologies: string[];
   link: string;
+  github: string;
 }
 
 export interface Experience {
