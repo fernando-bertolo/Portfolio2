@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: 1,
     title: "Portfolio 1.0",
     description: "Primeiro contato com React criando um portfolio",
-    imageUrl: "src/assets/ImagePc.jpg",
+    imageUrl: "assets/ImagePc.jpg",
     technologies: ["React", "Node.js", "Styled Components"],
     link: "https://bertolo.netlify.app/",
     github: "https://github.com/fernando-bertolo/Portfolio"
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Gerenciador de estoque automotivo",
     description: "Projeto realizado como Trabalho de conclusão de curso",
-    imageUrl: "src/assets/ImageTcc.png",
+    imageUrl: "assets/ImageTcc.png",
     technologies: ["React", "Express JS", "MySql", "Docker"],
     link: "https://github.com/fernando-bertolo/Projeto-TCC",
     github: "https://github.com/fernando-bertolo/Projeto-TCC"
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     id: 3,
     title: "Previsão do tempo",
     description: "Projeto realizado com intuito de aprimorar habilidades de javascript e entender como funciona o deploy de uma aplicação",
-    imageUrl: "src/assets/ImagePrevisionWeather.png",
+    imageUrl: "assets/ImagePrevisionWeather.png",
     technologies: ["HTML", "CSS", "JavaScript", "Deploy"],
     link: "https://prevision-weather.netlify.app/",
     github: "https://github.com/fernando-bertolo/Clima-tempo-JS"
