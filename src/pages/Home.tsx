@@ -6,7 +6,7 @@ import { Contact } from '../components/sections/Contact';
 import Navbar from '../components/Navbar';
 
 
-const Home = () => {
+export const Home = () => {
   return (
     <div>
       <Navbar />
@@ -20,5 +20,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

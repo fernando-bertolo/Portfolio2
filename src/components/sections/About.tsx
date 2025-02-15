@@ -13,8 +13,8 @@ export const About = () => {
               Desenvolvedor FullStack
             </h2>
             <p className="text-gray-600 mb-8 text-center">
-              Sou apaixonado por tecnologia e inovação. Desde sempre, os desafios do universo da programação me motivam a buscar conhecimento e soluções criativas. 
-              Atualmente, estou iniciando uma pós-graduação em Arquitetura de Software com ênfase em Java, 
+              Sou apaixonado por tecnologia e inovação. Desde sempre, os desafios do universo da programação me motivam a buscar conhecimento e soluções criativas.
+              Atualmente, estou iniciando uma pós-graduação em Arquitetura de Software com ênfase em Java,
               ampliando minha base já consolidada pela graduação em Análise e Desenvolvimento de Sistemas.
             </p>
             <div className="flex space-x-4">

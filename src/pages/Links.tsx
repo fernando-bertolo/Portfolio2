@@ -10,7 +10,7 @@ const iconMap: { [key: string]: React.ComponentType<any> } = {
   Twitter,
 };
 
-const Links = () => {
+export const Links = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white py-20">
       <div className="max-w-2xl mx-auto px-4">
@@ -52,5 +52,3 @@ const Links = () => {
     </div>
   );
 };
-
-export default Links;
