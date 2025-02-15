@@ -4,35 +4,31 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">Contact</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Contato</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">
-              Get in Touch
-            </h3>
             <p className="text-gray-600 mb-6">
-              I'm always open to discussing new projects, creative ideas or
-              opportunities to be part of your visions.
+              Entre em contato comigo para discutir projetos ou tirar duvidas.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="text-gray-600 mr-3" size={20} />
-                <span className="text-gray-600">contact@example.com</span>
+                <span className="text-gray-600">bertolo.dev@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <Phone className="text-gray-600 mr-3" size={20} />
-                <span className="text-gray-600">+1 234 567 890</span>
+                <span className="text-gray-600">(19) 99904-4410</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="text-gray-600 mr-3" size={20} />
-                <span className="text-gray-600">San Francisco, CA</span>
+                <span className="text-gray-600">Limeira, SP</span>
               </div>
             </div>
           </div>
           <form className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                Name
+                Nome
               </label>
               <input
                 type="text"
@@ -42,7 +38,7 @@ export const Contact = () => {
             </div>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Email
+                E-mail
               </label>
               <input
                 type="email"
@@ -52,7 +48,7 @@ export const Contact = () => {
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Message
+                Mensagem
               </label>
               <textarea
                 id="message"
@@ -64,7 +60,7 @@ export const Contact = () => {
               type="submit"
               className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
             >
-              Send Message
+              Enviar Mensagem
             </button>
           </form>
         </div>

@@ -165,17 +165,45 @@ export const solutionsbiExperience: Experience[] = [
 export const certificates: Certificate[] = [
   {
     id: 1,
-    name: "AWS Certified Developer",
-    issuer: "Amazon Web Services",
-    date: "2023",
-    link: "https://aws.amazon.com"
+    name: "Java: Orientação a objetos",
+    issuer: "Alura",
+    date: "2025",
+    link: "https://cursos.alura.com.br/formalCertificate/7ec933ff-4f86-425a-a416-155b4d918c49"
   },
   {
     id: 2,
-    name: "React Advanced Concepts",
-    issuer: "Frontend Masters",
-    date: "2022",
-    link: "https://frontendmasters.com"
+    name: "Java: Polimorfismo",
+    issuer: "Alura",
+    date: "2025",
+    link: "https://cursos.alura.com.br/formalCertificate/b57a299f-d680-4f8a-99ac-256b01ee91be"
+  },
+  {
+    id: 3,
+    name: "NLW Journey - React Native",
+    issuer: "Rocketseat",
+    date: "2024",
+    link: "https://app.rocketseat.com.br/certificates/2c352668-1a00-4520-9eb9-83b1f9e46820"
+  },
+  {
+    id: 4,
+    name: "Git e GitHub",
+    issuer: "Alura",
+    date: "2023",
+    link: "https://cursos.alura.com.br/certificate/1ed3787c-e0d0-4663-a145-febf432091df"
+  },
+  {
+    id: 5,
+    name: "JavaScript: Arrays",
+    issuer: "Alura",
+    date: "2023",
+    link: "https://cursos.alura.com.br/certificate/09b4d5d9-95b7-46af-ae44-0524f17dc537"
+  },
+  {
+    id: 6,
+    name: "JavaScript: Tipos, Variaveis",
+    issuer: "Alura",
+    date: "2023",
+    link: "https://cursos.alura.com.br/certificate/ac8c4777-74b0-4c72-9373-381b67ce7d08?lang=pt_BR"
   }
 ];
 
