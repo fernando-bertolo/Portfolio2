@@ -1,13 +1,20 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Loader2, MailIcon } from 'lucide-react';
 import { useState } from 'react';
+import { Input } from '../ui/input';
+import { Textarea } from '../ui/textarea';
+import { useToast } from '@/hooks/use-toast';
+import { Button } from '../ui/button';
+import { Toaster } from '../ui/toaster';
 
 export const Contact = () => {
+  const { toast } = useToast();
+  const [isloading, setIsLoading] = useState(false);
 
   const [formData, setFormData] = useState({
-    name: '',
+    nome: '',
     email: '',
     telefone: '',
-    message: ''
+    mensagem: ''
   })
 
   const handleChange = (
@@ -22,24 +29,49 @@ export const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:3333/email', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData)
-    })
+    setIsLoading(true);
+    try {
+      const response = await fetch('http://localhost:3333/email', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
+      const data = await response.json()
 
-    console.log(response);
+      if (!response.ok) {
+        toast({
+          title: 'Erro!',
+          description: data.message,
+          variant: 'destructive',
+        });
+        return;
+      }
+      toast({
+        title: 'Sucesso!!',
+        description: 'E-mail enviado!',
+        variant: 'default',
+      })
 
+      setFormData({
+        nome: '',
+        email: '',
+        telefone: '',
+        mensagem: ''
+      });
 
-    setFormData({
-      name: '',
-      email: '',
-      telefone: '',
-      message: ''
-    });
+    } catch (error) {
+      console.log(error);
+      toast({
+        title: 'Erro!',
+        description: 'Ocorreu um erro ao enviar o e-mail!!',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -68,27 +100,25 @@ export const Contact = () => {
           </div>
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="nome" className="block text-sm font-medium text-gray-700">
                 Nome
               </label>
-              <input
+              <Input
                 type="text"
-                id="name"
-                value={formData.name}
+                id="nome"
+                value={formData.nome}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                 E-mail
               </label>
-              <input
+              <Input
                 type="email"
                 id="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
 
@@ -96,36 +126,40 @@ export const Contact = () => {
               <label htmlFor="telefone" className="block text-sm font-medium text-gray-700">
                 Telefone
               </label>
-              <input
+              <Input
                 type="telefone"
                 id="telefone"
                 value={formData.telefone}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="mensagem" className="block text-sm font-medium text-gray-700">
                 Mensagem
               </label>
-              <textarea
-                id="message"
+              <Textarea
+                id="mensagem"
                 rows={4}
-                value={formData.message}
+                value={formData.mensagem}
                 onChange={handleChange}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-              ></textarea>
+              ></Textarea>
             </div>
-            <button
+            <Button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+              disabled={isloading}
             >
-              Enviar Mensagem
-            </button>
+              {isloading ? (
+                <Loader2 className="animate-spin" />
+              ) : (
+                <MailIcon />
+              )}
+              Enviar
+            </Button>
           </form>
         </div>
       </div>
+      <Toaster />
     </section>
   );
 };
